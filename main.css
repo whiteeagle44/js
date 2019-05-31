@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inconsolata', 'Courier New', 'Cinzel', serif;  background-color: #000000;
+  font-family: 'Courier New', 'Cinzel', serif;  background-color: #000000;
   color: #cecece;
   display: flex;
   flex-direction: column;
