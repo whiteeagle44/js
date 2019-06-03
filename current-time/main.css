@@ -1,0 +1,119 @@
+html {
+    background-color: #000000;
+    background-size: cover;
+    font-family: 'Courier New', 'Cinzel', serif;
+    text-align: center;
+    color: #cecece;
+    font-size: 8px;
+  }
+  @media (min-width: 50rem) {
+    html {
+      font-size: 10px;
+    }
+  }
+  
+  h2 {
+    font-weight: 400;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #cecece;
+  }
+
+  header {
+    font-size: 25px;
+    padding: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  
+  header a {
+    z-index: 1;
+  }
+  
+  @media (min-width: 50rem) {
+    font-size: 3rem;
+  }
+  
+  main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 50rem) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(250px, auto) 1fr; 
+      grid-gap: 10vw;
+    }
+  }
+  
+   .clock {
+    grid-column: 2 / 3;
+    width: 20rem;
+    height: 20rem;
+    margin: 20px 0;
+    border: 3px solid #cecece;
+    border-radius:50%;
+    position: relative;
+    padding:2rem;
+  }
+  
+  @media (min-width: 25rem) {
+    .clock {
+      width: 26rem;
+      height: 26rem;
+    }
+  }
+  
+  .clock-face {
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+  .hand {
+    width: 6px;
+    height: 50%;
+    background: #cecece;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    border-radius: 50% 0;
+
+  }
+  
+  .second-hand {
+    width: 1.6px;
+    background: #f44242;
+  }
+  
+  .minute-hand {
+    height: 46%;
+    width: 3px;
+  }
+  
+  .hour-hand {
+    border: 0.5px solid black;
+    height: 35%;
+    width: 4px;
+  }
+  
+  .time {
+    grid-column: 3 / 4;
+  }
+  
+  #digital-clock {
+    font-size: 5rem;
+    margin: 0;
+  }
+  
+  #location {
+    font-size: 3rem;
+  }
